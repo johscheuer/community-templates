@@ -8,4 +8,4 @@ DEFAULT coreos
 
 LABEL coreos
     KERNEL <%= @kernel %>
-    APPEND initrd=<%= @initrd %> cloud-config-url=<%= foreman_url('provision')%>
+    APPEND initrd=<%= @initrd %> coreos.config.url=<%= foreman_url('provision')%>
